@@ -1,0 +1,371 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ }
+img{
+  max-width: 100%;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  border-top: 2px solid rgb(63, 78, 134);
+  padding-top: 20px;
+  font-family: Helvetica, Arial, Sans-Serif;
+ /*padding: 20px 0 0 0;*/
+}
+.wraper{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+}
+.header__top{
+  background: rgb(63, 78, 134);
+  padding: 10px;
+  
+  font-size: 13px;
+  color: rgb(255,255,255);
+  text-align: center;
+  margin-bottom: 1px;
+}
+.header__top a{
+  color: #8db2de;
+  padding: 0 10px;
+}
+[href$="*.zip"]
+{
+	color: red;
+}
+.row{
+margin: 0 -10px;
+}
+.advantage{
+	height: 52px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding-left: 70px;
+	color: white;
+	text-transform: uppercase;
+	padding-right: 10px;
+	font-size: 12px;
+
+}
+.advantage__icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.advantage_bg1{
+	background-image: url('../images/advantagebg1.png');
+}
+.advantage_bg2{
+	background-image: url('../images/advantagebg2.png');
+
+}.advantage_bg3{
+	background-image: url('../images/advantagebg3.png');
+
+}
+.advantage__text{
+	height: 100%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.logo{
+	display: block;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	background: #ededed
+}
+.logo img{
+	vertical-align: middle;
+}
+
+ul.menu{
+	display: block;
+	list-style: none;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	z-index: 4;
+	
+	background: #fff;
+	transition: .5s all ease;
+}
+ul.menu.active{
+	width: 100%;
+    left: 10px;
+}
+ul.menu  li a{
+	text-decoration: none;
+}
+ul.menu > li > a{
+	background: #e4e5e9;
+	display: block; 
+	padding: 10px;
+	
+} 
+ul.menu > li{
+	border-bottom: 1px solid #d7d7d7;
+	margin-bottom: 1px;
+}
+ul.menu > li > ul {
+	display: block;
+	background: #e4e5e9;
+	padding-left: 30px;
+	list-style-type:none;
+}
+ul.menu li > ul > li{
+	position: relative;
+}
+ul.menu li > ul > li:before{
+	content: '';
+    background: rgb(63, 78, 134);
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    left: -17px;
+    top: 16px;
+}
+ul.menu li > ul > li >a{
+	display: block;
+	padding: 10px;
+}
+ul.menu > li.active > a{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a699b+1,3c4a7f+100 */
+background: #5a699b; /* Old browsers */
+background: -moz-linear-gradient(top, #5a699b 1%, #3c4a7f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #5a699b 1%,#3c4a7f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #5a699b 1%,#3c4a7f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a699b', endColorstr='#3c4a7f',GradientType=0 ); /* IE6-9 */
+color: white;
+}
+
+a.icon-menu {
+	position: fixed;
+    top: 25px;
+    right: 25px;
+    display: inline-flex;
+    border-radius: 50px;
+    border: 4px solid #fff ;
+    width: 50px;
+    height: 50px;
+    background: #3f4e86;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu__opener{
+	position: fixed;
+    display: block;
+    z-index: 5;
+}
+.menu__opener span{
+    transition: all 500ms ease-in-out;
+    display: block;
+    width: 42%;
+    height: 9%;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    padding: 0 8px 0 15px;
+    transform: translate3d(-50%, -50%, 0);
+    margin: 4px 0 3px 3px
+
+}
+.menu__opener span:before {
+    content: '';
+    height: 100%;
+    width: 21%;
+    background: white;
+    position: absolute;
+    border-radius: 100%;
+    margin-left: -33%;
+
+}
+
+
+.icon-menu-close span:before{
+	height: 0;
+	width: 0;
+}
+.icon-menu-close span{
+	width: 72%;
+	margin: 3px 0 3px 0;
+	right: 0;
+
+}
+
+.icon-menu-close span:nth-child(1){
+	transform: rotate(45deg);
+    top: 45%;
+    left: 15%;
+}
+.icon-menu-close span:nth-child(2){
+	 background: transparent;
+}
+.icon-menu-close span:nth-child(3){
+	transform: rotate(-45deg);
+    top: 14%;
+    left: 15%;
+
+}
+.main{
+	margin-top: 20px;
+}
+.button{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: #000;
+	cursor: pointer;
+}
+.c-text{
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.c-text h1{
+	color: #3f4e86;
+	font-size: 24px;
+	font-style: normal;
+	
+}
+.c-text p{
+	margin-bottom: 15px;
+}
+
+.subheading,.c-text h2{
+	font-size: 21px;
+	font-style: normal;
+	margin-bottom: 20px;
+}
+
+.opinion{
+	background: #3f4e86;
+	transition: .5s all ease;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	padding: 15px 8px;
+	margin-bottom: 20px;
+	height: 140px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.opinion__icon{
+	flex:1;
+}
+.opinion__icon .icon{
+  transition: .5s all ease;
+}
+
+.opinion .icon:first-child{
+  position: relative;
+  z-index: 1;
+  transform: translateX(50%);
+}
+.opinion .icon:last-child{
+  transform: translateX(-50%);
+}
+
+
+.opinion__text{
+	overflow: hidden;
+}
+.opinion:hover{
+  background: #f9a513;
+  color: #000;
+}
+.opinion:hover .icon:first-child{
+  opacity: 0;
+}
+.footer{
+	color: #8a8a8a;
+	padding: 10px 0;
+	border-top: 1px solid #8a8a8a;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+
+}
+
+[class*="col-"]{
+	padding: 0 10px;
+}
+@media(min-width: 768px){
+	.pull-right-tablet{
+		float: right;
+	}
+	.menu__opener{
+		display: none;
+		overflow: visible;
+	}
+	ul.menu{
+		position: static;
+	}
+
+	.col-tablet-1-4{
+		float: left;
+		width: 25%;
+	}
+	.col-tablet-3-4{
+		float: left;
+		width: 75%;
+	}
+	.col-tablet-1-3{
+		float: left;
+		width: 33.33%;
+	}
+	.content {
+    padding-left: 20px;
+	}
+	.header__top{
+		text-align: left;
+	}
+	ul.menu > li.active > a{
+		margin-right: -15px;
+		overflow: hidden;
+		position: relative;
+	}
+	ul.menu > li.active > a:before{
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    right: -49px;
+	    top: 0;
+	    width: 100px;
+	    height: 15px;
+	    background: #fff;
+	    transform: rotate(56deg);
+	}
+	ul.menu > li.active > a:after{
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    right: -49px;
+	    bottom:  0;
+	    width: 100px;
+	    height: 15px;
+	    background: #fff;
+	    transform: rotate(-56deg);
+	}
+
+}
